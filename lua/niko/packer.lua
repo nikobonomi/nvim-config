@@ -1,5 +1,14 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
+
+local install_path='~/.local/share/nvim/site/pack/packer/start/packer.nvim' 
+if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
+	print("installo packer")
+	vim.api.nvim_command('!git clone https://github.com/wbthomason/packer.nvim ' .. install_path)
+	vim.api.nvim_command('autocmd VimEnter * PackerInstall')
+	print("packer installed, restart nvim and type :PackerSync")
+end
+
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
