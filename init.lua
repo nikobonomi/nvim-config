@@ -1,0 +1,3 @@
+require("niko")
+print("hello")
+
