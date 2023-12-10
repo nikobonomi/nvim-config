@@ -21,4 +21,6 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  -- Using Packer
+  use 'navarasu/onedark.nvim'
 end)
