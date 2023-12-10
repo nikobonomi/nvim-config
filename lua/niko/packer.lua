@@ -23,4 +23,6 @@ return require('packer').startup(function(use)
 
   -- Using Packer
   use 'navarasu/onedark.nvim'
+
+  use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 end)
