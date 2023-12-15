@@ -11,6 +11,7 @@ require('mason-lspconfig').setup({
 	ensure_installed = {
 		'tsserver',
 		'html',
+        'lua_ls',
         'jdtls',
 		'eslint'},
 		handlers = {
