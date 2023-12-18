@@ -1,7 +1,7 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 
-local install_path='~/.local/share/nvim/site/pack/packer/start/packer.nvim' 
+local install_path='~/.local/share/nvim/site/pack/packer/start/packer.nvim'
 if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
 	print("installo packer")
 	vim.api.nvim_command('!git clone https://github.com/wbthomason/packer.nvim ' .. install_path)
@@ -47,7 +47,7 @@ return require('packer').startup(function(use)
 
   use {
       'nvim-neo-tree/neo-tree.nvim', branch = "v3.x",
-      requires = { 
+      requires = {
           'nvim-lua/plenary.nvim',
           'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
           'MunifTanjim/nui.nvim',
@@ -60,4 +60,6 @@ return require('packer').startup(function(use)
       'nvim-lualine/lualine.nvim',
       requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
+
+  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 end)

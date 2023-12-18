@@ -9,3 +9,6 @@ require("neo-tree").setup({
         }
     }
 })
+
+
+vim.keymap.set("n", "<leader>ft", ":Neotree toggle=true<CR>", {silent = true});
