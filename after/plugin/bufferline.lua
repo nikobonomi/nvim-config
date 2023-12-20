@@ -20,7 +20,7 @@ require("bufferline").setup{
         diagnostics = "nvim_lsp",
         offsets = {
             {
-                filetype = "neo-tree",
+                filetype = "NvimTree",
                 text = "File Explorer",
                 highlight = "Directory",
                 separator = " " -- use a "true" to enable the default, or set your own character
