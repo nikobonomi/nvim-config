@@ -11,11 +11,11 @@ require("nvim-tree").setup {
         icons = {
             glyphs = {
                 git = {
-                    untracked = "",
-                    unstaged = "U",
-                    renamed = "R",
-                    deleted = "D",
-                    ignored = "I"
+--                    untracked = "",
+--                    unstaged = "U",
+--                    renamed = "R",
+--                    deleted = "D",
+--                    ignored = "I"
                 }
             }
         }
